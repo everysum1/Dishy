@@ -1,5 +1,5 @@
 class DishesController < ApplicationController
-  before_action :set_dishes
+  before_action :set_dishes, except: [:search]
   before_action :set_dish, only: [:show, :edit, :update, :destroy]
   before_filter :authenticate_user!, only: [:new, :edit]
 
@@ -48,6 +48,12 @@ class DishesController < ApplicationController
     @dish.destroy
 
     redirect_to category_dishes_url(@category)
+  end
+
+  def search
+    Dish.search(params[:search])
+    # @dishes = Dish.search(params[:search])
+    redirect_to category_dish_path
   end
 
   private

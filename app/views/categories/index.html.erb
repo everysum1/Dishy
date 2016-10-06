@@ -4,3 +4,10 @@
   <h2><%= link_to category.name, category_dishes_path(category) %></h2>
 <% end %>
 
+<% if @results %>
+    <% @results.each do |result| %>
+    <p>
+      <%= link_to result.title, category_dish_path(result.category, result) %>
+    </p>
+    <% end %>
+<% end %>

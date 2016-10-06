@@ -1,0 +1,17 @@
+<div class="nav-bar">
+<%= link_to "Home", root_path %>
+   <%unless current_user %>
+     <%= link_to "Register", new_user_registration_path %>
+     <%= link_to "Login", new_user_session_path %>
+   <%else%>
+     <%= link_to current_user.username, current_user %>
+     <%= link_to "Logout", destroy_user_session_path, method: "delete" %>
+   <%end%>
+
+   <%= form_tag("/", method: "get") do %>
+   <p>
+     <%= text_field_tag :search, params[:search] %>
+     <%= submit_tag "Search", name: nil %>
+   </p>
+  <% end %>
+ </div>
