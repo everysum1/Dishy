@@ -1,0 +1,6 @@
+<h1>Dishy</h1>
+
+<% @categories.each do |category| %>
+  <h2><%= link_to category.name, category_dishes_path(category) %></h2>
+<% end %>
+

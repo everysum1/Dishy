@@ -1,0 +1,1 @@
+json.partial! "category_dishes/category_dish", category_dish: @category_dish

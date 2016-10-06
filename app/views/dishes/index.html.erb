@@ -1,0 +1,16 @@
+<h1><%=@category.name%></h1>
+<%= link_to 'New Dish', new_category_dish_path(params[:category_id]) %>
+
+
+<% @dishes.each do |dish| %>
+    <h3><%= link_to dish.title, [dish.category, dish] %></h3>
+    <div>
+        <div>made by <%= link_to dish.user.username %></div>
+        <div>Time: <%= dish.prep_time %> minutes</div>
+    </div>
+
+<% end %>
+
+
+<br />
+
