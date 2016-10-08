@@ -1,34 +1,33 @@
-<%= form_for([@dish.category, @dish]) do |f| %>
-  <% if @dish.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@dish.errors.count, "error") %> prohibited this dish from being saved:</h2>
+<div class="x-up-form">
+  <%= form_for([@dish.category, @dish]) do |f| %>
+    <% if @dish.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@dish.errors.count, "error") %> prohibited this dish from being saved:</h2>
 
-      <ul>
-      <% @dish.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
+        <ul>
+        <% @dish.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.text_field :title, class: "input-field input-box", placeholder: "Title" %>
+    </div>
+
+    <div class="field">
+      <%= f.number_field :prep_time, id: "prep-tme", class: "input-field input-box", placeholder: "Prep Time"   %>
+    </div>
+    <div class="field">
+      <%= f.text_area :ingredients, class: "input-field input-box", placeholder: "Ingredients"  %>
+    </div>
+    <div class="field">
+      <%= f.text_area :directions, class: "input-field input-box", placeholder: "Directions"  %>
+    </div>
+    <div class="field actions">
+      <%= f.submit "Create Dish", id: "submit-btn" %>
+      <%= link_to 'Back', category_dishes_path(@dish.category) %>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
-  </div>
-
-  <div class="field">
-    <%= f.label :prep_time %><br />
-    <%= f.number_field :prep_time %>
-  </div>
-  <div class="field">
-    <%= f.label :ingredients %><br />
-    <%= f.text_area :ingredients %>
-  </div>
-  <div class="field">
-    <%= f.label :directions %><br />
-    <%= f.text_area :directions %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+</div>

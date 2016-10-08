@@ -1,0 +1,38 @@
+<% if @results.count != 0 %>
+
+  <h1>Appetizers</h1>
+    <% @appetizers.sort_by{ |dish| dish.votes.count }.reverse.each do |result| %>
+    <p>
+      <%= pluralize(result.votes.count, "Vote") %> -
+      <%= link_to result.title, category_dish_path(result.category, result) %>
+    </p>
+    <% end %>
+
+    <h1>Entrees</h1>
+     <% @entrees.sort_by{ |dish| dish.votes.count }.reverse.each do |result| %>
+    <p>
+      <%= pluralize(result.votes.count, "Vote") %> -
+      <%= link_to result.title, category_dish_path(result.category, result) %>
+    </p>
+    <% end %>
+
+    <h1>Salads</h1>
+     <% @salads.sort_by{ |dish| dish.votes.count }.reverse.each do |result| %>
+    <p>
+      <%= pluralize(result.votes.count, "Vote") %> -
+      <%= link_to result.title, category_dish_path(result.category, result) %>
+    </p>
+    <% end %>
+
+    <h1>Desserts</h1>
+     <% @desserts.sort_by{ |dish| dish.votes.count }.reverse.each do |result| %>
+    <p>
+      <%= pluralize(result.votes.count, "Vote") %> -
+      <%= link_to result.title, category_dish_path(result.category, result) %>
+    </p>
+
+    <% end %>
+
+<% else %>
+  <h1>No Results Found</h1>
+<% end %>

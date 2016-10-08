@@ -1,7 +1,12 @@
-<h1>Editing dish</h1>
 
-<%= render 'form' %>
+<body id="edit-dish">
+  
+  <h1>Edit your dish</h1>
 
-<%= link_to 'Nevermind', [@dish.category, @dish] %>
-<%= link_to 'Delete', [@dish.category, @dish], :confirm => 'Are you sure?', :method => :delete %>
+  <%= render 'form' %>
+  <div class="field">
+    <%= link_to 'Nevermind', [@dish.category, @dish] %>
+    <%= link_to 'Delete', [@dish.category, @dish], :confirm => 'Are you sure?', :method => :delete %>
+  </div>
+</body>
 

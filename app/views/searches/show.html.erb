@@ -1,0 +1,22 @@
+<h4> Search Results </h4>
+
+<div class="white-bg" id="profile-recipes">
+  <% if @results.count != 0 %>
+    <ul>
+      <% if @results %>
+
+          <% @results.sort_by{ |dish| dish.votes.count }.reverse.each do |result| %>
+          <div class="dish-line">
+            <li>
+              <span class="vote-count" id="vote-count-<%= result.id %>"><%= result.votes.count %></span> <%= render partial: "votes/vote", locals: { dish: result } %>
+              <span class="dish-title"> <%= link_to result.title, category_dish_path(result.category, result) %> </span>
+            </li>
+          </div>
+        <% end %>
+      <% end %>
+
+    </ul>
+  <% else %>
+    <h1>No Results Found</h1>
+  <% end %>
+</div>

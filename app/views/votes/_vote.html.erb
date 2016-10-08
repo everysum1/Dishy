@@ -1,0 +1,6 @@
+<% if current_user && Vote.find_by(dish_id: dish.id, user_id: current_user.id) %>
+   <a class="vote-link" id="arugula-<%= dish.id %>" title="Upvote" href="<%= dish_votes_path(dish) %>"><%= image_tag "arugula-green.png" %></a>
+<% else %>
+  <a class="vote-link" id="arugula-<%= dish.id %>" title="Upvote" href="<%= dish_votes_path(dish) %>"><%= image_tag "arugula.png" %></a>
+ <% end %>
+
