@@ -11,6 +11,7 @@
 * Have a fresh, stylish look and feel
 
 ![homepage] (https://github.com/everysum1/Frais/blob/development/app/assets/images/FraisHomepage.png)
+![user profile] (https://github.com/everysum1/Frais/blob/development/app/assets/images/FraisUserProfile.png)
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
@@ -26,8 +27,8 @@ rails 5.0.0
 ### Installing
 From the command terminal, clone the repository to your local directory...
 ```
-$ git clone https://www.gihub.com/everysum1/hack-overflow.git
-$ cd hack-overflow
+$ git clone https://www.gihub.com/everysum1/Frais.git
+$ cd Frais
 ```
 
 Then run bundle command to install all dependencies and run the server.  
