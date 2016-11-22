@@ -1,5 +1,6 @@
 # Frais
 
+Rails full-stack application 
 #User Stories
 * Sign up/login
 * View categories and most upvoted recipes on homepage
