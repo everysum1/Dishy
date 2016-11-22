@@ -1,15 +1,6 @@
 # Frais
 
-Rails full-stack application 
-#User Stories
-* Sign up/login
-* View categories and most upvoted recipes on homepage
-* Be able to submit a recipe to a specific category
-* View chef profiles that contain the recipes they've submitted
-* Upvote recipes I like
-* Search the site based on recipe title or an ingredient
-* Have a clean, user-friendly interface
-* Have a fresh, stylish look and feel
+Foodies and talented chefs rejoice! This fresh, stylish full-stack Rails application crowdsources recipes from users, who can submit entries to win a place in the opening night menu of local vegetarian restaurant, Frais.  Recipes can be upvoted/downvoted by the community and users can securely authenticate and submit entries for various course categories.  Users can also search throughout the site for recipes by category, recipe name or ingredient.  
 
 ![homepage] (https://github.com/everysum1/Frais/blob/development/app/assets/images/FraisHomepage.png)
 ![user profile] (https://github.com/everysum1/Frais/blob/development/app/assets/images/FraisUserProfile.png)
