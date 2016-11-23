@@ -1,6 +1,6 @@
 # Frais
 
-Foodies and talented chefs rejoice! This fresh, stylish full-stack Rails application crowdsources recipes from users, who can log in, create a profile and submit entries to win a place in the opening night menu of local vegetarian restaurant, Frais.  
+Foodies and talented chefs rejoice! This fresh, stylish full-stack Rails application crowdsources and displays the top voted recipes from users, who can log in, create a profile and submit entries to win a place in the opening night menu of local vegetarian restaurant, Frais.  
 
 <img src="app/assets/images/FraisHomepage.png" width="440" height="300" /> <img src="app/assets/images/FraisUserProfile.png" width="440" height="300" />
 
