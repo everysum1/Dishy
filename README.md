@@ -6,7 +6,7 @@ Foodies and talented chefs rejoice! This fresh, stylish full-stack Rails applica
 
 Recipes can be viewed, upvoted/downvoted by the community and users can view as well as submit recipes to specific course categories. Users can also search throughout the site for recipes by category, recipe name or ingredient.  
 
-<img src="app/assets/images/FraisCategory.png" width="440" height="250" /> <img src="app/assets/images/FraisDish.png" width="440" height="250" /> 
+<img src="app/assets/images/FraisCategory.png" width="440" height="300" /> <img src="app/assets/images/FraisDish.png" width="440" height="300" /> 
 
 ## Getting Started
 
