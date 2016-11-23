@@ -46,12 +46,8 @@ heroku open
 ## Built With
 
 * [Ruby on Rails](http://api.rubyonrails.org/) -  Framework used
+* [Devise](https://github.com/plataformatec/devise) - Authentication solution used
 * [PostgreSQL](https://www.postgresql.org/docs/) - Database used
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
 
 ## Authors
 
