@@ -2,7 +2,7 @@
 
 Foodies and talented chefs rejoice! This fresh, stylish full-stack Rails application crowdsources recipes from users, who can log in, create a profile and submit entries to win a place in the opening night menu of local vegetarian restaurant, Frais.  
 
-<img src="app/assets/images/FraisHomepage.png" width="440" height="250" /> <img src="app/assets/images/FraisUserProfile.png" width="440" height="250" />
+<img src="app/assets/images/FraisHomepage.png" width="440" height="300" /> <img src="app/assets/images/FraisUserProfile.png" width="440" height="300" />
 
 Recipes can be viewed, upvoted/downvoted by the community and users can view as well as submit recipes to specific course categories. Users can also search throughout the site for recipes by category, recipe name or ingredient.  
 
