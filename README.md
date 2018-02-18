@@ -23,7 +23,7 @@ rails 5.0.0
 ### Installing
 From the command terminal, clone the repository to your local directory...
 ```
-$ git clone https://www.gihub.com/everysum1/Frais.git
+$ git clone https://www.gihub.com/izzydoesit/Frais.git
 $ cd Frais
 ```
 
